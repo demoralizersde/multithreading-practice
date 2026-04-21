@@ -9,6 +9,12 @@ public class Main {
         Thread t2 = new Thread(t);
         t2.start();
 
-
+    // Using Lambda Function
+        Thread t3 = new Thread(() -> {
+            for(int i = 1000; i < 1200; i++){
+                System.out.println(i);
+            }
+        });
+        t3.start();
     }
 }
